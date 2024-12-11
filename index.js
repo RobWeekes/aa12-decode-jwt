@@ -6,10 +6,26 @@ const sampleJwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15c2VsZkBh
 
 // Your code here - first commit
 
+const jwtArr = sampleJwt.split('.')
+
+
+const [header, payload, signature ] = jwtArr
+
+
+
 // #2: Decoding a JWT's header and payload
 // Hint: Buffer.from(string, 'base64').toString();
 
-// Your code here 
+// Your code here
 
+const decodedHeader = Buffer.from(header, 'base64').toString();
+
+const decodedPayload = Buffer.from(payload, 'base64').toString();
+
+const decodedSignature = Buffer.from(signature, 'base64').toString();
+
+console.log(decodedHeader)
+console.log(decodedPayload)
+console.log(decodedSignature)
 // #3: Finally, take note of the algorithm and email in the decoded header and
 // payload when you run this file. You'll need these to complete the next quiz.
