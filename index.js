@@ -4,7 +4,7 @@ const sampleJwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im15c2VsZkBh
 
 // #1: Splitting the JWT into 3 parts: header, payload, signature
 
-// Your code here 
+// Your code here - first commit
 
 // #2: Decoding a JWT's header and payload
 // Hint: Buffer.from(string, 'base64').toString();
